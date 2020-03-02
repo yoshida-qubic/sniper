@@ -47,7 +47,7 @@ section,
 	html{font-size: 14px;}
 	.container{max-width: none;}
 }
-.is_sp{display: none;}
+.is_sp{display: none!important;}
 .is_tab{display: none;}
 @media screen and (min-width:769px) and ( max-width:1025px) {
 	.is_hidden_tab{display: none;}

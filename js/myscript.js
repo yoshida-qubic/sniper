@@ -32,6 +32,7 @@ const tabletwidth = 1025;
 
 		if (scrollTop > 300) {
 			above_header.classList.add("active");
+			logo.classList.add("active");
 		} else {
 			above_header.classList.remove("active");
 			logo.classList.remove("active");
