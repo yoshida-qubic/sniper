@@ -28,7 +28,7 @@ section,
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
-	padding:0 2rem;
+	padding:0 1.5rem;
 }
 .is_pc{display: none;}
 .is_hidden_tab{display: none;}
@@ -78,13 +78,12 @@ main{padding-top: 3.5rem;}
 }
 .top_sub_ttl a{
 	position: relative;
-	/* padding: 0 0 1rem; */
 }
 .top_sub_ttl .alllink{
 	position: absolute;
 	font-size: 0.8rem;
 	font-weight: bold;
-	top: 20%;
+	top: 15%;
 	right:-1rem;
 	border: 1px solid #fff;
 	padding: 0 1rem 0.25rem 1rem;
@@ -94,6 +93,61 @@ main{padding-top: 3.5rem;}
 	line-height: 1;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ロゴアニメーション ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.logo_animation{
+	position: absolute;
+	top:50%;
+	left:50%;
+	opacity: 0.15;
+}
+.top04 .logo_animation{
+	width: 150%;
+	transform: translate(-50%,-50%)translateX(-15rem);
+}
+.top07 .logo_animation{
+	width: 150%;
+	transform: translate(-50%,-50%)translateX(15rem);
+}
+.access .logo_animation{
+	z-index: -1;
+	opacity: .6;
+	transform: translate(-50%,0);
+	top:0;
+	width:200%;
+}
+.logo_animation .main_img{
+	opacity: 0;
+	transition: .3s 1.2s;
+}
+.logo_animation.active .main_img{
+	opacity: 1;
+}
+.left_x,
+.right_x{
+	position: absolute;
+	top:50%;
+	left:50%;
+	width:100%;
+	transition: 0.8s transform, .3s opacity 1s;
+	opacity:1;
+}
+.left_x{
+	transform: translate(0%,50%) rotate(60deg);
+}
+.right_x{
+	transform: translate(-100%,50%) rotate(-60deg);
+	width:96.5%;
+}
+.logo_animation.active .left_x{
+	transform: translate(-50%,-50%) rotate(0);
+	opacity:0;
+}
+.logo_animation.active .right_x{
+	transform: translate(-50%,-50%) rotate(0);
+	opacity:0;
+}
+
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 header{ 
@@ -330,7 +384,6 @@ position: relative;
 }
 .top02_in .img{
 	z-index: 10; 
-	/* transform: translateY(-2.5rem); */
 	margin: -2.5rem 0 0;
 }
 .top02_in .txt{
@@ -345,6 +398,213 @@ position: relative;
 	margin:0 0 1.5rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top03{	margin:4rem 0;}
+.top03 .cat_box{
+	margin:1rem 0 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.top03 .cat_box a{
+	font-size: 0.8rem;
+	width: 48%;
+	margin-top: 0.5rem;
+	text-align: center;
+	background: #fff;
+	padding: 0.5rem 0;
+	color: #000;
+}
+.top03 .part_box{margin:2rem 0 0;}
+.top03 .swiper-container{overflow: visible;}
+.top03 .part_box a:nth-of-type(even){
+	margin:2rem 0 0;
+}
+.top03 .swiper-container .swiper-button-prev{
+	left:-1.5rem;
+	background-image:url(../images/common/prev.png);
+}
+.top03 .swiper-container .swiper-button-next{
+	background-image:url(../images/common/next.png);
+	right:-1.5rem;
+}
+.top03 .swiper-container .swiper-button-prev,
+.top03 .swiper-container .swiper-button-next{
+	background-size: contain;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.top03 .part_box a{
+	position: relative;
+	color: #000;
+}
+.top03 .part_box a .inner{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding: 0.5rem;
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+.top03 .part_box a .inner h3{
+	font-size: 0.8rem;
+	font-weight: normal;
+		display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.top03 .part_box a .inner p.cat{font-size: 0.8rem;}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ .top04{ 
+	padding:4rem 0;
+	background: #222;
+}
+.top04 .part_box.swiper-container{
+	margin: 3rem 0 0;
+	overflow: visible;
+}
+.top04 .swiper-container .swiper-button-prev{
+	left:-1.5rem;
+	background-image:url(../images/common/prev.png);
+}
+.top04 .swiper-container .swiper-button-next{
+	background-image:url(../images/common/next.png);
+	right:-1.5rem;
+}
+.top04 .swiper-container .swiper-button-prev,
+.top04 .swiper-container .swiper-button-next{
+	background-size: contain;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.top04 .part_box a{
+	position: relative;
+	color: #000;
+}
+.top04 .part_box a .inner{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding: 0.5rem;
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+.top04 .part_box a .inner h3{
+		font-size: 0.8rem;
+	font-weight: normal;
+		display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.top04 .part_box a .inner p.cat{font-size: 0.8rem;}
+.top04 .cat_box{
+	margin:2rem 0 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.top04 .cat_box a{
+	width: 31%;
+	font-size: 0.8rem;
+	margin-right: 3.5%;
+	margin-top: 1rem;
+	text-align: center;
+	background: #fff;
+	padding: 0.5rem 0;
+	color: #000;
+	position: relative;
+}
+.top04 .cat_box a:nth-of-type(3n){
+	margin-right: 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top05{
+	padding: 4rem 0 0;
+}
+.top05_in{
+	margin: 3rem 0 0;
+}
+.top05_in a{
+	padding:1.5rem 1.5rem 2rem;
+	position: relative;
+}
+.top05_in a:nth-of-type(1){background: url(../images/top/top05_01.jpg) center center / cover no-repeat;}
+.top05_in a:nth-of-type(2){background: url(../images/top/top05_02.jpeg) center center / cover no-repeat;}
+.top05_in a:nth-of-type(3){background: url(../images/top/top05_03.jpeg) center center / cover no-repeat;}
+.top05_in a:nth-of-type(4){background: url(../images/top/top05_04.jpg) center center / cover no-repeat;}
+.top05_in a:nth-of-type(5){background: url(../images/top/top05_05.jpg) center center / cover no-repeat;}
+.top05_in a:nth-of-type(6){background: url(../images/top/top05_06.jpg) center center / cover no-repeat;}
+.top05_in a::before{
+	position: absolute;
+	content:'';
+	width: 125%;
+	height: 100%;
+	content:'';
+	background: linear-gradient(to bottom, #AA0000 0% , #5D0000 100%);
+	opacity: .7;
+}
+.top05_in a:nth-of-type(odd)::before{
+	top:0;
+	right:0;
+	transform: skewX(-35deg);
+}
+.top05_in a:nth-of-type(even)::before{
+	transform: skewX(-35deg);
+	top:0;
+	left:0;
+}
+.top05_in a .item{
+	width: 75%;
+	z-index: 10;
+	position: relative;
+}
+.top05_in a:nth-of-type(odd) .item{margin:0 auto 0 0;}
+.top05_in a:nth-of-type(even) .item{margin:0 0 0 auto;}
+.top05_in a .item h3{
+	font-size: 1.5rem;
+	margin:0 0 0.75rem;
+}
+.top05_in a .item span{
+	display: block;
+	margin: 0.5rem 0 0 auto;
+	width: 50%;
+	text-align: center;
+	position: relative;
+}
+.top05_in a .item span::before,
+.top05_in a .item span::after{
+	position: absolute;
+	content: '';
+	background: #fff;
+	bottom:-0.5rem;
+	right:10%;
+	height: 1px;
+}
+.top05_in a .item span::before{
+	width: 60%;
+}
+.top05_in a .item span::after{ 
+	width: 1.5rem;
+	transform-origin: bottom right;
+	transform:rotate(25deg);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+ 
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  

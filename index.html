@@ -210,7 +210,7 @@
 							<a href="#" class="swiper-slide">
 								<img src="./images/top/top03_02.png">
 								<div class="inner">
-									<h3>商品名商品名商品名</h3>
+									<h3>商品名商品名商品名商品名商品名商品名</h3>
 									<p class="cat">商品カテゴリー</p>
 									<p class="price"><strong>¥00000</strong></p>
 								</div>
@@ -287,9 +287,15 @@
 									},
 									paginationClickable: true,
 									breakpoints: {
-										1280: {
-											// slidesPerView: 2.5,
-											// spaceBetween: 100,
+										767: {
+											loop: true,
+											speed: 300,
+											autoplay: {
+												delay: 5000,
+												disableOnInteraction: true
+											},
+											slidesPerView: 2,
+											spaceBetween: 30,
 										}
 									}
 								});
@@ -414,8 +420,11 @@
 									},
 									breakpoints: {
 										1280: {
-											// slidesPerView: 2.5,
 											spaceBetween: 50,
+										},
+										767:{
+											slidesPerView: 2,
+												spaceBetween: 20,
 										}
 									}
 								});

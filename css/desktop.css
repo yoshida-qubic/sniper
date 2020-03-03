@@ -47,7 +47,7 @@ section,
 	html{font-size: 14px;}
 	.container{max-width: none;}
 }
-.is_sp{display: none;}
+.is_sp{display: none!important;}
 .is_tab{display: none;}
 @media screen and (min-width:769px) and ( max-width:1025px) {
 	.is_hidden_tab{display: none;}
@@ -643,7 +643,6 @@ aside p .sub_txt{
 }
 .top03 .part_box{
 	margin:4rem 0 0;
-	/* padding-left: 15%; */
 }
 .top03 .swiper-container{
 	overflow: visible;
@@ -668,7 +667,7 @@ aside p .sub_txt{
 .top03 .part_box a{
 	position: relative;
 	color: #000;
-	border:0 solid var(--red);
+	/* border:0 solid var(--red); */
 }
 .top03 .part_box a::before{
 	content: '';
