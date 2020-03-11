@@ -78,7 +78,11 @@ $(function () {
 
 	});
 
-
+	// クリックした画像をメイン画像として表示
+	$('.car03 .swiper-slide .img').on('click',function(){
+		let imgSrc = $(this).children('img').attr('src');
+		$('.main_img').children('img').attr('src', imgSrc);
+	});
 
 
 

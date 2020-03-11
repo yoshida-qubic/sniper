@@ -1261,6 +1261,9 @@ opacity: 0;
 	line-height: 1.4;
 	font-weight: bold;
 }
+.ttl_wrap .ttl.bk{
+	color: #000;
+}
 .ttl_wrap .ttl span{
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -1509,3 +1512,51 @@ opacity: 0;
 .car03 .swiper-slide .img{
 	width: 50%;
 }
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car04{
+	background: url(../images/car/car04_bg.jpg) center top/cover no-repeat;
+	padding: 4rem 0;
+	color: #000;
+}
+.car04 .box{
+	display: flex;
+	justify-content: space-between;
+}
+.car04 .box .item{
+	width: 70%;
+}
+.car04 .box .item02{
+	width: 27%;
+	background: #acacac;
+	margin-left: 3%;
+}
+.car04 .box .item_in{
+	margin-bottom: 4rem;
+}
+.car04 .ttl_wrap{
+	margin-bottom: 2.5rem;
+}
+.car04 table{
+	width: 100%;
+	text-align: left;
+	border-collapse: separate;
+	margin-bottom: 1rem;
+}
+.car04 th{
+	background: #adadad;
+	width: 20%;
+	padding: 0.5rem 1.5rem;
+	font-size: 0.8rem;
+}
+.car04 td{
+	background: #fff;
+	width: 30%;
+	padding: 0.5rem 2rem;
+	font-weight: bold;
+}
+.car04 p{
+	font-size: 0.8rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
