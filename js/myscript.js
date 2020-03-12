@@ -84,6 +84,13 @@ $(function () {
 		$('.main_img').children('img').attr('src', imgSrc);
 	});
 
+	let slideImg = $('.car03 .swiper-container').height() - 15;
+	$('.car03 .main_img').height(slideImg);
 
+	$(window).resize(function(){
+		let slideImg02 = $('.car03 .swiper-container').height() - 15;
+		console.log(slideImg);
+		$('.car03 .main_img').height(slideImg);
+	});
 
 });
