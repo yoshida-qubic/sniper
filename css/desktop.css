@@ -32,20 +32,24 @@ section,
 	height: auto;
 	position: relative;
 }
-.container{
+.container,
+.container_s{
 	width: 90%;
 	margin: 0 auto;
 }
 @media screen and (min-width:1540px) {
 	.container{max-width: 1480px;}
+	.container_s{max-width: 1000px;}
 }
 @media screen and (min-width:1280px) and ( max-width:1539px) {
 	html{font-size: 15px;}
 	.container{max-width: 1280px;}
+	.container_s{max-width: 1000px;}
 }
 @media screen and (min-width:769px) and ( max-width:1279px) {
 	html{font-size: 14px;}
 	.container{max-width: none;}
+	.container_s{max-width: none;}
 }
 .is_sp{display: none!important;}
 .is_tab{display: none;}
@@ -1272,6 +1276,22 @@ opacity: 0;
 	font-size: 1.5rem;
 	font-weight: bold;
 }
+.lower_mv .mv_ttl{
+	position: relative;
+	width: 100%;
+	height: 30vh;
+	min-height: 200px;
+}
+.lower_mv .ttl{
+	display: block;
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	font-size: 3rem;
+	font-weight: normal;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -1715,3 +1735,42 @@ opacity: 0;
 .car07 .part_box a .inner p.cat{font-size: 0.8rem;}
 .car07 .part_box a .inner p.price{font-size: 1.2rem;}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car07 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.company01{
+	background: url(../images/company/mv.jpg) center center/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.company02{
+	padding: 4rem 0;
+}
+.company02 .item{
+	margin-bottom: 3rem;
+}
+.company02 .item h2{
+	font-size: 1.7rem;
+	margin-bottom: 1rem;
+}
+.company02 table{
+	width: 100%;
+}
+.company02 th,
+.company02 td{
+	padding: 1rem 1rem;
+	border-bottom: solid 1px #fff;
+}
+.company02 th{
+	width: 20%;
+	text-align: left;
+}
+.company02 td{
+	width: 80%;
+}
+.company02 td iframe{
+	width: 100%;
+	height: 300px;
+	margin: 1rem 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
