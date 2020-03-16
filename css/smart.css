@@ -147,7 +147,7 @@ main{padding-top: 3.5rem;}
 	transform: translate(-50%,-50%) rotate(0);
 	opacity:0;
 }
-
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ロゴアニメーション ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ ナビ ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 header{ 
@@ -177,13 +177,13 @@ header{
 	position: relative;
 	display: flex;
 }
-.sns_box{
+header .sns_box{
 	display: flex;
 	justify-content: space-between;
 	width: 70%;
 	padding:0.5rem; 
 }
-.sns_box a{
+header .sns_box a{
 	width: 28%;
 	background: #333;
 	display: flex;
@@ -304,7 +304,68 @@ position: relative;
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ ナビ ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ フッター ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.access{
+	padding: 3rem 0;
+	z-index: 10;
+}
+.access iframe{
+	margin: 2rem 0;
+	width: 100%;
+	height: 250px;
+}
+.access_in .txt h4{ 
+	font-size: 1.2rem;
+	margin:0 0 1rem;
+}
+.access_in .txt p{ 
+	margin:1rem 0 0;
+}
+.access_in .txt a{
+	color: #000;
+	background: #fff;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 1rem;
+	margin:1.5rem 0 0;
+	position: relative;
+	z-index: 10;
+}
+.access_in .txt a img{
+	width: 1.2rem;
+	vertical-align: middle;
+	margin-right: 1rem;
+}
+.follow img{
+	margin:2rem 0;
+	width: 100%;
+}
+footer .sns_box{
+	display: flex;
+	margin : 0 auto;
+	justify-content: center;
+}
+footer .sns_box a{
+	margin: 0 0.75rem;
+	font-size: 1.2rem;
+	border-radius: 50%;
+	background: #fff;
+	width:2rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #000;
+	transition: .3s;
+}
+footer .sns_box a.tw{color: #1DA1F2;}
+footer .sns_box a.insta{color: #CF2E92;}
+footer .sns_box a.line{color: #00B900;}
+.copy{
+	text-align: center;
+	margin:2rem 0 0;
+	padding: 1.5rem 0;
+	background: var(--red);
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ フッター ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
@@ -597,6 +658,192 @@ position: relative;
 	transform:rotate(25deg);
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top06 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top06{
+	padding: 4rem 1.5rem;
+	background: url(../images/top/top06_03.jpg) center center / 100% auto repeat;
+	color: #222;
+}
+.top06_in{
+	margin:2rem 0 0;
+}
+.top06_in a{
+	position: relative;
+	margin:2rem auto 0;
+	width: 80%;
+}
+.top06_in a::before{
+	content:'';
+	background: linear-gradient(to bottom, #AA0000 0% , #5D0000 100%);
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	position: absolute;
+	opacity: .6;
+	opacity: .6;
+	z-index: 10;
+}
+.top06_in a p{
+	font-size: 2.5rem;
+	position: absolute;
+	z-index: 11;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top06 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top07 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top07{
+	padding: 3rem 0 4rem;
+}
+.top07_in{
+	margin:2rem 0 0;
+}
+.top07_in a{
+	margin:1rem 0 0;
+	display: flex;
+	justify-content: space-between;
+}
+.top07_in a img{ 
+	width: 35%;
+}
+.top07_in a .item{
+	padding: 1rem;
+	width:65%;
+	background: rgba(255, 255, 255, 0.8);
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.top07_in a .item h3{ font-size: 0.9rem; }
+.top07_in a .item .cat{ font-size: 0.8rem; }
+.top07_in a .item h4{ font-size: 1rem; }
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top07 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ top08 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.top08{
+	padding:3rem 0 2rem;
+	background: url(../images/top/top08_01.png) center center / 100% auto repeat;
+}
+.top08_in .box{
+	margin:2rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+.top08_in .box .ttl{
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	width:30%;
+}
+.top08_in .box .ttl h3{
+	font-weight: normal;
+	font-size: 3rem;
+	line-height: 1;
+	margin-bottom: 2rem;
+	opacity: .7;
+}
+.top08_in .box .ttl a{
+	font-weight: bold;
+	font-size: 0.8rem;
+	border: 1px solid #fff;
+	padding: 0.5rem 1rem 0.75rem;
+	letter-spacing: 5px;
+}
+.top08_in article{
+	width:65%;
+}
+.top08_in article a{
+	position: relative;
+}
+.top08_in article a::before{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	background: linear-gradient(to bottom, #AA0000 0% , #5D0000 100%);
+	content: '';
+	opacity: .7;
+	z-index: 5;
+}
+.top08_in article a .txt{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 85%;
+	z-index: 6;
+}
+.top08_in article a .txt time{ font-size: 0.8rem; }
+.top08_in article a .txt h4{
+	font-size: 1.1rem;
+	margin:1rem 0;
+}
+.top08_in article a .txt p{ font-size: 0.8rem; }
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top08 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ コモン01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.common01{
+	padding: 3rem 0;
+	background: url(../images/common/common_contact.png) center center / cover repeat;
+}
+.common01_in a{
+	color: #000;
+	background: rgba(255, 255, 255, .7);
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5rem 1rem;
+	font-weight: bold;
+	position: relative;
+	z-index: 10;
+	margin:1.35rem 0 0;
+}
+.common01_in .ico{
+	width:3rem;
+	height: 3rem;
+	background: #000;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	margin:0 0 1rem;
+	text-align: center;
+}
+.common01_in .main_txt{font-size: 1.5rem; font-weight: normal;}
+.common01_in .sub_txt{font-size: 0.8rem; margin-left: 0.5rem;}
+.common01_in .txt{font-size: 1.3rem; }
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ コモン01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ コモン02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.common02{
+	padding: 3rem 0;
+	background: url(../images/common/common_recruit.png) center center / cover repeat;
+	text-align: center;
+}
+.common02 p{
+	margin:1rem 0 2rem;
+	font-size: 0.8rem;
+}
+.common02 a{
+	padding:1rem 6rem;
+	font-size: 1.1rem;
+	display: inline-block;
+	border: 1px solid #fff;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+}
+
+
+
+
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
