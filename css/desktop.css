@@ -276,9 +276,9 @@ header{
 	color: #000;
 	transition: .3s;
 }
-.sns_box a.tw:hover{color: #1DA1F2;}
-.sns_box a.insta:hover{color: #CF2E92;}
-.sns_box a.line:hover{color: #00B900;}
+.sns_box a.tw:hover{background: #1DA1F2;color: #fff;}
+.sns_box a.insta:hover{background: #CF2E92;color: #fff;}
+.sns_box a.line:hover{background: #00B900;color: #fff;}
 .above_header .tel_box{
 	display: flex;
 	align-items: center;
@@ -974,7 +974,6 @@ aside p .sub_txt{
 	height: 100%;
 	position: absolute;
 	opacity: .6;
-	opacity: .6;
 	z-index: 10;
 	transition: .3s;
 }
@@ -988,7 +987,7 @@ aside p .sub_txt{
 	z-index: 11;
 	top:50%;
 	left:50%;
-	transform:translateX(-50%,-50%);
+	transform:translate(-50%,-50%);
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top06 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1140,7 +1139,6 @@ aside p .sub_txt{
 	visibility: hidden;
 	opacity: 0;
 	transition: .3s;
-
 }
 .top08_in article a:hover .txt p{
 	visibility: visible;
@@ -1151,7 +1149,7 @@ aside p .sub_txt{
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ コモン01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .common01{
 	padding: 6rem 0;
-		background: url(../images/common/common_contact.png) center center / cover repeat;
+	background: url(../images/common/common_contact.png) center center / cover repeat;
 }
 .common01_in{
 	display: flex;
@@ -1229,7 +1227,6 @@ opacity: 0;
 	font-size: 0.8rem;
 }
 .common02 a{
-	/* background: var(--red); */
 	padding:1rem 6rem;
 	font-size: 1.1rem;
 	display: inline-block;
