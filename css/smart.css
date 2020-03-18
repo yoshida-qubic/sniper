@@ -706,13 +706,16 @@ footer .sns_box a.line{color: #00B900;}
 	margin:1rem 0 0;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 .top07_in a img{ 
 	width: 35%;
+	height: auto;
 }
 .top07_in a .item{
 	padding: 1rem;
 	width:65%;
+	height: 100%;
 	background: rgba(255, 255, 255, 0.8);
 	color: #000;
 	display: flex;
