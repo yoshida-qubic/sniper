@@ -53,8 +53,8 @@ section,
 }
 .is_sp{display: none!important;}
 .is_tab{display: none;}
-@media screen and (min-width:769px) and ( max-width:1025px) {
-	.is_hidden_tab{display: none;}
+@media screen and (min-width:769px) and ( max-width:1279px) {
+	.is_hidden_tab{display: none!important;}
 	.is_tab{display: block;}
 } 
 :root{
@@ -999,6 +999,7 @@ aside p .sub_txt{
 	margin:3rem 0 0;
 	display: flex;
 	justify-content: space-between;
+
 }
 .top07_in a{
 	position: relative;
