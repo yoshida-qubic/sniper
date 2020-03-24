@@ -1788,6 +1788,15 @@ opacity: 0;
 	height: 300px;
 	margin: 1rem 0;
 }
+.company02 td a{
+	transition: .3s;
+}
+.company02 td a:hover{
+	opacity: 0.6;
+}
+.company02 td a span{
+	margin-left: 0.5rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ staff01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
