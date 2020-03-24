@@ -1743,6 +1743,7 @@ opacity: 0;
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .company02{
 	padding: 4rem 0;
+	background: url(../images/company/company_bg.png) center center/1920px auto repeat;
 }
 .company02 .item{
 	margin-bottom: 5rem;
@@ -1788,3 +1789,26 @@ opacity: 0;
 	margin: 1rem 0;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ staff01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.staff01{
+	background: url(../images/staff/mv.jpg) center center/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ staff01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ staff02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.staff02{
+	padding: 4rem 0;
+	background: url(../images/staff/staff_bg.png) center center/1920px auto repeat;
+}
+.staff02 .box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.staff02 .box .img{
+	width: 32%;
+	height: 300px;
+	margin-bottom: 1.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ staff02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */

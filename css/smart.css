@@ -892,6 +892,7 @@ footer .sns_box a.line{color: #00B900;}
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .company02{
 	padding: 2rem 0 3rem;
+	background: url(../images/company/company_bg.png) center center/100% auto repeat;
 }
 .company02 .item{
 	margin-bottom: 3rem;
@@ -910,8 +911,8 @@ footer .sns_box a.line{color: #00B900;}
 }
 .company02 .item_in h3{
 	order: 1;
-	font-size: 1.2rem;
-	text-align: center;
+	font-size: 1.1rem;
+	text-align: left;
 	margin-bottom: 1rem;
 }
 .company02 .item_in .img{
@@ -930,17 +931,18 @@ footer .sns_box a.line{color: #00B900;}
 }
 .company02 th,
 .company02 td{
-	display: block;
-	padding: 0.75rem 0.5rem;
 	border-bottom: solid 1px #fff;
 }
 .company02 th{
-	width: 100%;
+	width: 30%;
 	text-align: left;
+	padding: 0.75rem 0.5rem 0.75rem 0;
+
 }
 .company02 td{
-	width: 100%;
+	width: 70%;
 	text-align: left;
+	padding: 0.75rem 0 0.75rem 0.5rem;
 }
 .company02 td iframe{
 	width: 100%;
@@ -949,8 +951,21 @@ footer .sns_box a.line{color: #00B900;}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ staff01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.staff01{
+	background: url(../images/staff/mv.jpg) center center/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ staff01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ staff02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.staff02{
+	padding: 3rem 0;
+	background: url(../images/staff/staff_bg.png) center center/100% auto repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ staff02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 @media screen and (orientation:portrait) {/* 縦向き */}
