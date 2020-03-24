@@ -90,7 +90,6 @@ $(function () {
 
 	$(window).resize(function(){
 		slideImg = $('.car03 .swiper-slide').height() - 11.25;
-		console.log(slideImg);
 		$('.car03 .main_img').height(slideImg);
 	});
 

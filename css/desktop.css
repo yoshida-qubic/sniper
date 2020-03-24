@@ -1745,11 +1745,27 @@ opacity: 0;
 	padding: 4rem 0;
 }
 .company02 .item{
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
 }
 .company02 .item h2{
-	font-size: 1.7rem;
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+.company02 .item_in .img{
+	float: right;
+	padding: 0 0 1rem 1.5rem;
+}
+.company02 .item_in h3{
+	font-size: 1.4rem;
 	margin-bottom: 1rem;
+}
+.company02 .item_in p + p{
+	margin-top: 1rem;
+}
+.company02 .item_in::after{
+	content: '';
+	clear: both;
+	display: block;
 }
 .company02 table{
 	width: 100%;
@@ -1760,11 +1776,11 @@ opacity: 0;
 	border-bottom: solid 1px #fff;
 }
 .company02 th{
-	width: 20%;
+	width: 25%;
 	text-align: left;
 }
 .company02 td{
-	width: 80%;
+	width: 75%;
 }
 .company02 td iframe{
 	width: 100%;

@@ -24,7 +24,8 @@ section,
 	height: auto;
 	position: relative;
 }
-.container{
+.container,
+.container_s{
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
@@ -849,12 +850,104 @@ footer .sns_box a.line{color: #00B900;}
 
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.ttl_wrap{
+	margin-bottom: 2.5rem;
+}
+.ttl_wrap .ttl{
+	font-size: 1.5rem;
+	line-height: 1.4;
+	font-weight: bold;
+}
+.ttl_wrap .ttl.bk{
+	color: #000;
+}
+.ttl_wrap .ttl span{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.lower_mv .mv_ttl{
+	position: relative;
+	width: 100%;
+	height: 18vh;
+	min-height: 125px;
+}
+.lower_mv .ttl{
+	display: block;
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	font-size: 2.4rem;
+	font-weight: normal;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.company01{
+	background: url(../images/company/mv.jpg) center center/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.company02{
+	padding: 2rem 0 3rem;
+}
+.company02 .item{
+	margin-bottom: 3rem;
+}
+.company02 .item:last-of-type{
+	margin-bottom: 0;
+}
+.company02 .item h2{
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.company02 .item_in{
+	display: flex;
+	flex-direction: column;
+}
+.company02 .item_in h3{
+	order: 1;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.company02 .item_in .img{
+	order: 2;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.company02 .item_in p{
+	order: 3;
+}
+.company02 .item_in p + p{
+	margin-top: 1rem;
+}
+.company02 table{
+	width: 100%;
+}
+.company02 th,
+.company02 td{
+	display: block;
+	padding: 0.75rem 0.5rem;
+	border-bottom: solid 1px #fff;
+}
+.company02 th{
+	width: 100%;
+	text-align: left;
+}
+.company02 td{
+	width: 100%;
+	text-align: left;
+}
+.company02 td iframe{
+	width: 100%;
+	height: 250px;
+	margin: 1rem 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
  
