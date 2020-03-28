@@ -93,4 +93,14 @@ $(function () {
 		$('.car03 .main_img').height(slideImg);
 	});
 
+	// STAFF詳細を表示
+	$('.staff02 .overlay_btn').on('click', function(){
+		$(this).toggleClass('active');
+		$(this).children('.overlay_area').fadeIn();
+
+		if(!$('.staff02 .overlay_btn').hasClass('active')){
+			$(this).children('.overlay_area').fadeOut();
+		}
+	});
+
 });
