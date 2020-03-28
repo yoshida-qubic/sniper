@@ -1879,6 +1879,16 @@ opacity: 0;
 	z-index: 60000;
 	background: rgba(0,0,0,0.9);
 }
+.staff02 .box .overlay_area .close_btn{
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	color: #fff;
+	transition: .3s;
+}
+.staff02 .box .overlay_area .close_btn:hover{
+	opacity: 0.7;
+}
 .staff02 .box .overlay_area .item_in{
 	display: flex;
 }

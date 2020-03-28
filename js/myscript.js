@@ -95,12 +95,17 @@ $(function () {
 
 	// STAFF詳細を表示
 	$('.staff02 .overlay_btn').on('click', function(){
-		$(this).toggleClass('active');
-		$(this).children('.overlay_area').fadeIn();
-
-		if(!$('.staff02 .overlay_btn').hasClass('active')){
-			$(this).children('.overlay_area').fadeOut();
-		}
+		$(this).addClass('active');
+		$(this).next('.overlay_area').fadeIn();
 	});
 
+	$('.staff02 .close_btn_sp').on('click', function(){
+		$('.staff02 .overlay_btn').removeClass('active');
+		$('.staff02 .overlay_btn').next('.overlay_area').fadeOut();
+	});
+
+	$('.staff02 .close_btn').on('click', function(){
+		$('.staff02 .overlay_btn').removeClass('active');
+		$('.staff02 .overlay_btn').next('.overlay_area').fadeOut();
+	});
 });
