@@ -93,10 +93,16 @@ $(function () {
 		$('.car03 .main_img').height(slideImg);
 	});
 
+	$('.car .submit').on('click', function(){
+		$('.car form').submit(function(){
+			$(this).attr('action', './sample.html');
+		});
+	});
+
 	// STAFF詳細を表示
-	$('.staff02 .overlay_btn').on('click', function(){
-		$(this).addClass('active');
-		$(this).next('.overlay_area').fadeIn();
+	$('.staff02 .item').on('click', function(){
+		$(this).children('.overlay_btn').addClass('active');
+		$(this).children('.overlay_btn').next('.overlay_area').fadeIn();
 	});
 
 	$('.staff02 .close_btn_sp').on('click', function(){
@@ -107,5 +113,12 @@ $(function () {
 	$('.staff02 .close_btn').on('click', function(){
 		$('.staff02 .overlay_btn').removeClass('active');
 		$('.staff02 .overlay_btn').next('.overlay_area').fadeOut();
+	});
+
+	$('.staff02 .close_btn_sp').on('click', function(e){
+		e.stopPropagation();
+	});
+	$('.staff02 .close_btn').on('click', function(e){
+		e.stopPropagation();
 	});
 });
