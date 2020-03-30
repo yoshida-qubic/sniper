@@ -1054,6 +1054,49 @@ footer .sns_box a.line{color: #00B900;}
 .close_btn_sp span:nth-of-type(2){transform:translate(-50%,-50%) rotate(-45deg);}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ staff02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ s_metal01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.s_metal01{
+	background: url(../images/sheet_metal/mv.jpg) center center/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ s_metal01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ s_metal02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.s_metal02{
+	margin:3rem 0 0;
+}
+.s_metal02_in{
+	background: #000;
+	padding: 0 0 3rem;
+	margin: 1rem 0 0;
+}
+.s_metal02_in .img01{
+	z-index: 10; 
+	margin: -2.5rem 0 0;
+}
+.s_metal02_in .txt{
+	background: var(--red);
+	margin: -3rem 0 0;
+	position: relative;
+	z-index: 20;
+	padding:1.5rem;
+}
+.s_metal02_in .txt h3{
+	font-size: 1.2rem;
+	margin:0 0 1.5rem;
+}
+.s_metal02_in .box{
+	margin-top: 1.25rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.s_metal02_in .box .img{
+	width: 48%;
+	margin-top: 3.5vw;
+
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ s_metal02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
