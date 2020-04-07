@@ -93,12 +93,6 @@ $(function () {
 		$('.car03 .main_img').height(slideImg);
 	});
 
-	$('.car .submit').on('click', function(){
-		$('.car form').submit(function(){
-			$(this).attr('action', './sample.html');
-		});
-	});
-
 	// STAFF詳細を表示
 	$('.staff02 .item').on('click', function(){
 		$(this).children('.overlay_btn').addClass('active');

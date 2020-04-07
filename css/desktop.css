@@ -1295,9 +1295,10 @@ opacity: 0;
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .car01 .mv_bg{
 	position: relative;
-	background: url(../images/car/mv_bg.jpg) center center/cover no-repeat;
+	background: url(../images/car/mv_bg.jpg) center 75%/cover no-repeat;
 	background-attachment: fixed;
 	height: calc(100vh - 8.75rem);
+	min-height: 500px;
 }
 .car01 .mv_bg::after{
 	display: block;
@@ -1310,6 +1311,16 @@ opacity: 0;
 	left: 50%;
 	bottom: 0;
 	transform: translateX(-50%);
+}
+@media screen and (min-width:1280px) and ( max-width:1539px) {
+	.car01 .mv_bg{
+		height: calc(100vh - 8.8rem);
+	}
+}
+@media screen and (min-width:769px) and ( max-width:1279px) {
+	.car01 .mv_bg{
+		height: calc(100vh - 3.5rem);
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1334,7 +1345,7 @@ opacity: 0;
 .car02 th{
 	font-size: 0.8rem;
 }
-.car02 th .large{
+.car02 th.price{
 	font-size: 1.2rem;
 }
 .car02 th .small{
@@ -1391,13 +1402,13 @@ opacity: 0;
 }
 .car .form_input label{
 	font-size: 0.8rem;
-	width: 20%;
+	width: 25%;
 }
 .car .form_input select,
 .car .form_input input[type="text"],
 .car .form_input input[type="email"]{
 	font-size: 1.3rem;
-	width: 80%;
+	width: 75%;
 	padding: 0.5rem;
 	margin-bottom: 0.5rem;
 	border: none;
@@ -1411,29 +1422,9 @@ opacity: 0;
 	width: 65%;
 }
 .car .form_wrap .submit{
-	position: relative;
 	width: 10%;
 }
-.car .form_wrap .submit::before{
-	content: '';
-	border: 0.2rem solid var(--red);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width:100%;
-	height: 100%;
-	z-index: 11;
-	transform: scale(0.6, 0.5);
-	transition: .25s cubic-bezier(0.21, 0.66, 0.26, 1);
-	opacity: 0;
-}
-.car .form_wrap .submit:hover::before{
-	transform: scale(0.9, 0.8);
-	opacity: 1;
-}
 .car input[type="submit"]{
-	position: relative;
-	z-index: 10;
 	font-size: 1.2rem;
 	color: #fff;
 	background: var(--red);
@@ -1441,7 +1432,7 @@ opacity: 0;
 	width: 100%;
 	height: 100%;
 	padding: 1rem;
-	transition: .25s cubic-bezier(0.21, 0.66, 0.26, 1);
+	transition: .3s;
 	cursor: url("../images/common/cursor.png")24 24, url("../images/common/cursor.cur")24 24,pointer;
 }
 .car .submit:hover input[type="submit"]{
@@ -1469,6 +1460,9 @@ opacity: 0;
 	align-items: center;
 	justify-content: center;
 }
+.car .contact .tel .tel_in{
+	text-align: center;
+}
 .car .contact a{
 	font-size: 1.3rem;
 	font-weight: bold;
@@ -1493,13 +1487,14 @@ opacity: 0;
 .car .contact .line a p,
 .car .contact .tel p{
 	position: relative;
+	padding-left: 2.5em;
 }
 .car .contact .line a p::before{
 	position: absolute;
 	content: '';
 	background: url(../images/car/line_bk.png) center center/cover no-repeat;
 	top: 50%;
-	left: -2.5em;
+	left: 0;
 	transform: translateY(-50%);
 	width: 38px;
 	height: 36px;
@@ -1513,7 +1508,7 @@ opacity: 0;
 	content: '';
 	background: url(../images/car/tel_bk.png) center center/cover no-repeat;
 	top: 50%;
-	left: -2.5em;
+	left: 0;
 	transform: translateY(-50%);
 	width: 36px;
 	height: 36px;

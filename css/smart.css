@@ -5,11 +5,11 @@ html{
 	color: #fff;
 	font-size: 15px;
 	line-height: 1.8;
-	ont-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+	font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 	-webkit-text-size-adjust: 100%;
 }
 a{
-color: #fff;
+	color: #fff;
 	display: block;
 }
 #wrapper{
@@ -851,7 +851,7 @@ footer .sns_box a.line{color: #00B900;}
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .ttl_wrap{
-	margin-bottom: 2.5rem;
+	margin-bottom: 2rem;
 }
 .ttl_wrap .ttl{
 	font-size: 1.5rem;
@@ -862,7 +862,7 @@ footer .sns_box a.line{color: #00B900;}
 	color: #000;
 }
 .ttl_wrap .ttl span{
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 }
 .lower_mv .mv_ttl{
@@ -882,6 +882,161 @@ footer .sns_box a.line{color: #00B900;}
 	font-weight: normal;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car01 .mv_bg{
+	position: relative;
+	height: calc(40vh - 3.5rem);
+	min-height: 200px;
+}
+.car01 .mv_bg::before{
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40vh;
+	min-height: 200px;
+	background: url(../images/car/mv_bg.jpg) center bottom/cover no-repeat;
+}
+.car01 .mv_bg::after{
+	display: block;
+	content: '';
+	position: absolute;
+	border-top: 70px solid transparent;
+	border-right: 384px solid #333;
+	border-bottom: 0;
+	border-left: 384px solid #333;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car02{
+	background: #333;
+	padding: 2rem 0;
+}
+.car02 table{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.car02 tr{
+	display: block;
+	width: 100%;
+}
+.car02 th,
+.car02 td{
+	border-bottom: solid 1px #ccc;
+	padding: 10px;
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 75px;
+}
+.car02 thead{
+	width: 35%;
+}
+.car02 thead tr{
+	width: 100%;
+}
+.car02 tbody{
+	display: block;
+	width: 65%;
+}
+.car02 td span{
+	display: inline;
+}
+.car02 th{
+	font-size: 0.9rem;
+}
+.car02 th.price{
+	font-size: 1.2rem;
+}
+.car02 th .small{
+	font-size: 0.7rem;
+}
+.car02 td .large{
+	font-size: 1.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car03{
+	background: #333;
+	padding: 2rem 0;
+}
+.car form{
+	margin-bottom: 2rem;
+}
+.car .form_input{
+	color: #000;
+	background: #fff;
+	width: 100%;
+	padding: 1rem;
+	display: block;
+}
+.car .form_input .date_wrap,
+.car .form_input .email_wrap,
+.car .form_input .name_wrap{
+	padding-top: 0.5rem;
+	border-bottom: solid 1px #000;
+}
+.car .form_input .date_wrap{
+	padding-top: 0;
+}
+.car .form_input .name_wrap{
+	position: relative;
+	width: 100%;
+}
+.car .form_input .name_wrap::after{
+	content: '様';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%) translateY(10px);
+}
+.car .form_input label{
+	display: block;
+	font-size: 0.8rem;
+	width: 100%;
+}
+.car .form_input select,
+.car .form_input input[type="text"],
+.car .form_input input[type="email"]{
+	font-size: 16px;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+	border: none;
+}
+.car .form_input .name_wrap input[type="text"]{
+	width: 90%;
+}
+.car .form_input select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.car .form_wrap .submit{
+	margin-top: 1.25rem;
+	width: 100%;
+}
+.car input[type="submit"]{
+	font-size: 16px;
+	color: #fff;
+	background: var(--red);
+	border: none;
+	width: 100%;
+	height: 100%;
+	padding: 0.75rem;
+	cursor: url("../images/common/cursor.png")24 24, url("../images/common/cursor.cur")24 24,pointer;
+}
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .company01{
