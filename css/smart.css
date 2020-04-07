@@ -308,6 +308,7 @@ position: relative;
 .access{
 	padding: 3rem 0;
 	z-index: 10;
+	background: #333;
 }
 .access iframe{
 	margin: 2rem 0;
@@ -337,9 +338,15 @@ position: relative;
 	vertical-align: middle;
 	margin-right: 1rem;
 }
+.follow{
+	background: #333;
+}
 .follow img{
 	margin:2rem 0;
 	width: 100%;
+}
+footer .top_sub_ttl{
+	background: #333;
 }
 footer .sns_box{
 	display: flex;
@@ -828,7 +835,11 @@ footer .sns_box a.line{color: #00B900;}
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ コモン02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .common02{
 	padding: 3rem 0;
-	background: url(../images/common/common_recruit.png) center center / cover repeat;
+	/* background: url(../images/common/common_recruit.png) center center / cover repeat; */
+	background: #333;
+	background-image: url(../images/common/common_recruit.png);
+	background-position: center center;
+	background-size: cover;
 	text-align: center;
 }
 .common02 p{
@@ -854,7 +865,7 @@ footer .sns_box a.line{color: #00B900;}
 	margin-bottom: 2rem;
 }
 .ttl_wrap .ttl{
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	line-height: 1.4;
 	font-weight: bold;
 }
@@ -862,7 +873,7 @@ footer .sns_box a.line{color: #00B900;}
 	color: #000;
 }
 .ttl_wrap .ttl span{
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: bold;
 }
 .lower_mv .mv_ttl{
@@ -937,7 +948,7 @@ footer .sns_box a.line{color: #00B900;}
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	height: 75px;
+	height: 70px;
 }
 .car02 thead{
 	width: 35%;
@@ -956,13 +967,13 @@ footer .sns_box a.line{color: #00B900;}
 	font-size: 0.9rem;
 }
 .car02 th.price{
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 .car02 th .small{
 	font-size: 0.7rem;
 }
 .car02 td .large{
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -972,7 +983,7 @@ footer .sns_box a.line{color: #00B900;}
 	padding: 2rem 0;
 }
 .car form{
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 }
 .car .form_input{
 	color: #000;
@@ -1012,7 +1023,7 @@ footer .sns_box a.line{color: #00B900;}
 	font-size: 16px;
 	width: 100%;
 	padding: 0.5rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.25rem;
 	border: none;
 }
 .car .form_input .name_wrap input[type="text"]{
@@ -1037,6 +1048,278 @@ footer .sns_box a.line{color: #00B900;}
 	padding: 0.75rem;
 	cursor: url("../images/common/cursor.png")24 24, url("../images/common/cursor.cur")24 24,pointer;
 }
+
+.car .contact .line,
+.car .contact .tel{
+	width: 100%;
+}
+.car .contact .line{
+	margin-bottom: 1rem;
+}
+.car .contact a{
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #000;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.car .contact a span{
+	font-weight: normal;
+}
+.car .contact .line a p,
+.car .contact .tel p{
+	position: relative;
+	padding-left: 2.5em;
+}
+.car .contact .line a p::before{
+	position: absolute;
+	content: '';
+	background: url(../images/car/line_bk.png) center center/cover no-repeat;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 29px;
+}
+.car .contact .tel a p::before{
+	position: absolute;
+	content: '';
+	background: url(../images/car/tel_bk.png) center center/cover no-repeat;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 29px;
+	height: 29px;
+}
+.car03 .slider_wrap{
+	margin-top: 3rem;
+}
+.car03 .main_img{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 1rem;
+}
+.car03 .main_img img{
+	width: 100%;
+}
+.car03 .slide_img{
+	width: 100%;
+	position: relative;
+}
+.car03 .swiper-container{
+	width: 100%;
+}
+.car03 .swiper-wrapper{
+	width: 100%;
+}
+.car03 .swiper-slide{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.car03 .swiper-slide .img{
+	width: 23%;
+	margin-bottom: 0.5rem;
+}
+.car03 .swiper-button-prev,
+.car03 .swiper-container-rtl .swiper-button-next{
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")!important;
+	left: -10px!important;
+}
+.car03 .swiper-button-next,
+.car03 .swiper-container-rtl .swiper-button-prev{
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")!important;
+	right: -10px!important;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car04{
+	background: url(../images/car/car04_bg.jpg) center top/cover no-repeat;
+	padding: 3rem 0;
+	color: #000;
+}
+.car04 .box .item{
+	width: 100%;
+}
+.car04 .box .item02{
+	width: 100%;
+	height: 20rem;
+	background: #acacac;
+}
+.car04 .box .item_in{
+	margin-bottom: 3.5rem;
+}
+.car04 .box .item_in:last-of-type{
+	margin-bottom: 2rem;
+}
+.car04 .ttl_wrap{
+	margin-bottom: 1.5rem;
+}
+.car04 table{
+	width: 100%;
+	text-align: left;
+	border-collapse: separate;
+	margin-bottom: 0.5rem;
+}
+.car04 tr{
+	display: flex;
+	flex-wrap: wrap;
+}
+.car04 th,
+.car04 td{
+	padding: 0.5rem;
+	letter-spacing: 1px;
+	margin-bottom: 2px;
+}
+.car04 th{
+	background: #adadad;
+	width: 39.5%;
+	margin-right: 0.5%;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+.car04 td{
+	background: #fff;
+	width: 60%;
+	font-size: 0.9rem;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.car04 p{
+	font-size: 0.8rem;
+}
+.car04 .function_tb td{
+	width: 100%;
+	color: #575757;
+	background: #a0a0a0;
+}
+.car04 .function_tb td.active{
+	color: #000;
+	background: #ff8383;
+	font-weight: bold;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car05{
+	padding: 3rem 0;
+	background: #333;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car06 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car06{
+	background: url(../images/car/car06_bg.jpg) center top/cover no-repeat;
+	padding: 3rem 0;
+}
+.car06 .item{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	margin-bottom: 3.5rem;
+}
+.car06 .item:last-of-type{
+	margin-bottom: 0;
+}
+.car06 .item .img{
+	width: 100%;
+	margin-bottom: 1.5rem;
+	order: 1;
+}
+.car06 .item .txt{
+	width: 100%;
+	order: 2;
+}
+.car06 .item .ttl_wrap{
+	margin-bottom: 1rem;
+}
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car07 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car07{
+	padding: 3rem 0;
+	background: #222;
+}
+.car07 .box{
+	margin-bottom: 2rem;
+}
+.car07 .btn{
+	color: #000;
+	background: #fff;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 1rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.car07 .part_box.swiper-container{
+	margin: 2rem 0 0;
+	overflow: visible;
+}
+.car07 .swiper-container .swiper-button-prev{
+	left:-1.5rem;
+	background-image:url(../images/common/prev.png);
+}
+.car07 .swiper-container .swiper-button-next{
+	background-image:url(../images/common/next.png);
+	right:-1.5rem;
+}
+.car07 .swiper-container .swiper-button-prev,
+.car07 .swiper-container .swiper-button-next{
+	background-size: contain;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.car07 .part_box a{
+	position: relative;
+	color: #000;
+}
+.car07 .part_box a .inner{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding: 0.5rem;
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+.car07 .part_box a .inner h2{
+	font-size: 0.8rem;
+font-weight: normal;
+	display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+overflow: hidden;
+}
+.car07 .part_box a .inner p.cat{font-size: 0.8rem;}
+.car07 .cat_box{
+	margin:2rem 0 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.car07 .cat_box a{
+	width: 31%;
+	font-size: 0.8rem;
+	margin-right: 3.5%;
+	margin-top: 1rem;
+	text-align: center;
+	background: #fff;
+	padding: 0.5rem 0;
+	color: #000;
+	position: relative;
+}
+.car07 .cat_box a:nth-of-type(3n){
+	margin-right: 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .company01{

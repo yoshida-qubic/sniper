@@ -1403,6 +1403,10 @@ opacity: 0;
 .car .form_input label{
 	font-size: 0.8rem;
 	width: 25%;
+	letter-spacing: 0.1rem;
+}
+.car .form_input label.email{
+	width: 40%;
 }
 .car .form_input select,
 .car .form_input input[type="text"],
@@ -1412,6 +1416,9 @@ opacity: 0;
 	padding: 0.5rem;
 	margin-bottom: 0.5rem;
 	border: none;
+}
+.car .form_input label.email input[type="text"]{
+	width: 60%;
 }
 .car .form_input select{
 	-webkit-appearance: none;
@@ -1580,6 +1587,7 @@ opacity: 0;
 .car04 .ttl_wrap{
 	margin-bottom: 2.5rem;
 }
+
 .car04 table{
 	width: 100%;
 	text-align: left;
@@ -1595,6 +1603,7 @@ opacity: 0;
 	background: #adadad;
 	width: 20%;
 	font-size: 0.8rem;
+	font-weight: normal;
 }
 .car04 td{
 	background: #fff;

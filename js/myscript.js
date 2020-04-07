@@ -84,14 +84,16 @@ $(function () {
 		$('.main_img').children('img').attr('src', imgSrc);
 	});
 
-	let slideImg = '';
-	slideImg = $('.car03 .swiper-slide').height() - 11.25;
-	$('.car03 .main_img').height(slideImg);
-
-	$(window).resize(function(){
+	if (w > spwidth){
+		let slideImg = '';
 		slideImg = $('.car03 .swiper-slide').height() - 11.25;
 		$('.car03 .main_img').height(slideImg);
-	});
+	
+		$(window).resize(function(){
+			slideImg = $('.car03 .swiper-slide').height() - 11.25;
+			$('.car03 .main_img').height(slideImg);
+		});
+	}
 
 	// STAFF詳細を表示
 	$('.staff02 .item').on('click', function(){
