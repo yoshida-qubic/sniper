@@ -10,8 +10,7 @@
 	<!-- <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico"" /> -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/desktop.css" media="screen and (min-width: 769px)">
-	<link rel="stylesheet" type="text/css" href="css/tab.css"
-		media="screen and (min-width: 769px) and (max-width: 1025px)">
+	<link rel="stylesheet" type="text/css" href="css/tab.css"	media="screen and (min-width: 769px) and (max-width: 1279px)">
 	<link rel="stylesheet" type="text/css" href="css/smart.css" media="screen and (max-width: 768px)">
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<script defer src="js/all.min.js"></script>
@@ -38,7 +37,7 @@
 					<a href="#" class="insta" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
 					<a href="#" class="line" target="_blank"><span><i class="fab fa-line"></i></span></a>
 				</div>
-				<div class="tel_box is_pc">
+				<div class="tel_box is_hidden_tab">
 					<p class="oswald large">TEL : 072-276-1123</p>
 					<p>10:00~20:00<br>火曜定休</p>
 				</div>
@@ -52,7 +51,7 @@
 				
 			</div>
 
-			<div class="openmenu is_sp" id="openmenu">
+			<div class="openmenu is_tab" id="openmenu">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -109,7 +108,7 @@
 						<li><a href="#"><span>INFORMATION</span></a></li>
 						<li><a href="#"><span>CONTACT</span></a></li>
 
-						<li class="is_sp tel oswald">
+						<li class="is_tab tel oswald">
 							<a href="tel:0722761123">
 								<span class="large">TEL : 072-276-1123</span>
 								<span>10:00~20:00 火曜定休</span>
@@ -141,7 +140,7 @@
 					<table class="scroll02">
 						<thead>
 							<tr>
-								<th><span class="large">本体価格</span><br class="is_tab"><span class="small">（消費税込）</span></th>
+								<th class="price">本体価格<br class="is_tab"><span class="small">（消費税込）</span></th>
 								<th>年式<br class="is_tab"><span class="small">（初度登録）</span></th>
 								<th>走行距離</th>
 								<th>排気量</th>
@@ -152,20 +151,20 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td><small class="large">545</small>万円</td>
+								<td><span class="large">545</span>万円</td>
 								<td>
-									2015<br>
+									2015<br class="is_pc">
 									（平成27）年
 								</td>
 								<td>2.5万km</td>
 								<td>3500cc</td>
 								<td>なし</td>
 								<td>
-									2020<br>
+									2020<br class="is_pc">
 									（令和2）年<br>
 									12月
 								</td>
-								<td>パール<br class="is_tab">ホワイト</td>
+								<td>パールホワイト</td>
 							</tr>
 						</tbody>
 					</table>
@@ -193,7 +192,7 @@
 										</select>
 									</div>
 									<div class="email_wrap">
-										<label for="email">メールアドレス</label>
+										<label for="email" class="email">メールアドレス</label>
 										<input type="email">
 									</div>
 									<div class="name_wrap">
@@ -206,6 +205,7 @@
 								</div>
 							</div>
 						</form>
+
 						<div class="contact">
 							<div class="line">
 								<a href="#">
@@ -213,7 +213,11 @@
 								</a>
 							</div>
 							<div class="tel">
-								<a href="#">
+									<div class="tel_in is_pc">
+										<p class="is_pc">電話で来店予約・見積り</p>
+										<span class="oswald is_pc">Tel : 072-276-1123</span>
+									</div>
+								<a class="is_sp" href="tel:072-276-1123">
 									<p>電話で来店予約・見積り</p>
 									<span class="oswald">Tel : 072-276-1123</span>
 								</a>
@@ -317,6 +321,7 @@
 										状態
 									</h2>
 								</div>
+
 								<table>
 									<tr>
 										<th>走行距離</th>
@@ -358,6 +363,7 @@
 										基本情報
 									</h2>
 								</div>
+
 								<table>
 									<tr>
 										<th>現行型</th>
@@ -415,6 +421,7 @@
 								<div class="ttl_wrap">
 									<h2 class="ttl bk">装備</h2>
 								</div>
+
 								<table class="function_tb">
 									<tr>
 										<td colspan="2" class="active">エアバッグ：運転席/助手席/サイド</td>
@@ -581,7 +588,7 @@
 										</select>
 									</div>
 									<div class="email_wrap">
-										<label for="email">メールアドレス</label>
+										<label for="email" class="email">メールアドレス</label>
 										<input type="email">
 									</div>
 									<div class="name_wrap">
@@ -775,11 +782,16 @@
 				<div class="container">
 					<h2 class="top_sub_ttl">CONTACT</h2>
 					<div class="common01_in">
-						<div class="box">
+						<div class="box is_pc">
 							<span class="ico"><i class="fal fa-mobile"></i></span>
 							<span class="main_txt oswald">Tel：072-276-1123</span>
 							<span class="sub_txt">10:00~20:00 (火曜定休)</span>
 						</div>
+						<a href="tel:0722761123" class="is_sp">
+							<span class="ico"><i class="fal fa-mobile"></i></span>
+							<span class="main_txt oswald">Tel：072-276-1123<span class="sub_txt">10:00~20:00 (火曜定休)</span></span>
+						</a>
+
 						<a href="#">
 							<span class="ico"><i class="far fa-envelope"></i></span>
 							<span class="txt">お問い合わせフォームはこちら</span>
@@ -858,7 +870,7 @@
 		</footer>
 
 	<!-- ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ サイドバー ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ -->
-		<aside id="sidebar">
+		<aside id="sidebar" class="is_pc">
 
 			<p><span class="oswald main_txt">Tel:072-276-1123</span><span class="sub_txt">10:00~20:00 火曜定休</span></p>
 			

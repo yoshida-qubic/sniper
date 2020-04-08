@@ -84,14 +84,37 @@ $(function () {
 		$('.main_img').children('img').attr('src', imgSrc);
 	});
 
-	let slideImg = '';
-	slideImg = $('.car03 .swiper-slide').height() - 11.25;
-	$('.car03 .main_img').height(slideImg);
-
-	$(window).resize(function(){
+	if (w > spwidth){
+		let slideImg = '';
 		slideImg = $('.car03 .swiper-slide').height() - 11.25;
-		console.log(slideImg);
 		$('.car03 .main_img').height(slideImg);
+	
+		$(window).resize(function(){
+			slideImg = $('.car03 .swiper-slide').height() - 11.25;
+			$('.car03 .main_img').height(slideImg);
+		});
+	}
+
+	// STAFF詳細を表示
+	$('.staff02 .item').on('click', function(){
+		$(this).children('.overlay_btn').addClass('active');
+		$(this).children('.overlay_btn').next('.overlay_area').fadeIn();
 	});
 
+	$('.staff02 .close_btn_sp').on('click', function(){
+		$('.staff02 .overlay_btn').removeClass('active');
+		$('.staff02 .overlay_btn').next('.overlay_area').fadeOut();
+	});
+
+	$('.staff02 .close_btn').on('click', function(){
+		$('.staff02 .overlay_btn').removeClass('active');
+		$('.staff02 .overlay_btn').next('.overlay_area').fadeOut();
+	});
+
+	$('.staff02 .close_btn_sp').on('click', function(e){
+		e.stopPropagation();
+	});
+	$('.staff02 .close_btn').on('click', function(e){
+		e.stopPropagation();
+	});
 });

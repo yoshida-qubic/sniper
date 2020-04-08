@@ -5,11 +5,11 @@ html{
 	color: #fff;
 	font-size: 15px;
 	line-height: 1.8;
-	ont-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+	font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 	-webkit-text-size-adjust: 100%;
 }
 a{
-color: #fff;
+	color: #fff;
 	display: block;
 }
 #wrapper{
@@ -24,7 +24,8 @@ section,
 	height: auto;
 	position: relative;
 }
-.container{
+.container,
+.container_s{
 	width: 100%;
 	max-width: 650px;
 	margin: 0 auto;
@@ -307,6 +308,7 @@ position: relative;
 .access{
 	padding: 3rem 0;
 	z-index: 10;
+	background: #333;
 }
 .access iframe{
 	margin: 2rem 0;
@@ -336,9 +338,15 @@ position: relative;
 	vertical-align: middle;
 	margin-right: 1rem;
 }
+.follow{
+	background: #333;
+}
 .follow img{
 	margin:2rem 0;
 	width: 100%;
+}
+footer .top_sub_ttl{
+	background: #333;
 }
 footer .sns_box{
 	display: flex;
@@ -827,7 +835,11 @@ footer .sns_box a.line{color: #00B900;}
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ コモン02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .common02{
 	padding: 3rem 0;
-	background: url(../images/common/common_recruit.png) center center / cover repeat;
+	/* background: url(../images/common/common_recruit.png) center center / cover repeat; */
+	background: #333;
+	background-image: url(../images/common/common_recruit.png);
+	background-position: center center;
+	background-size: cover;
 	text-align: center;
 }
 .common02 p{
@@ -849,15 +861,687 @@ footer .sns_box a.line{color: #00B900;}
 
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+.ttl_wrap{
+	margin-bottom: 2rem;
+}
+.ttl_wrap .ttl{
+	font-size: 1.25rem;
+	line-height: 1.4;
+	font-weight: bold;
+}
+.ttl_wrap .ttl.bk{
+	color: #000;
+}
+.ttl_wrap .ttl span{
+	font-size: 1rem;
+	font-weight: bold;
+}
+.lower_mv .mv_ttl{
+	position: relative;
+	width: 100%;
+	height: 18vh;
+	min-height: 125px;
+}
+.lower_mv .ttl{
+	display: block;
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	font-size: 2.4rem;
+	font-weight: normal;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
-/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car01 .mv_bg{
+	position: relative;
+	height: calc(40vh - 3.5rem);
+	min-height: 200px;
+}
+.car01 .mv_bg::before{
+	content: '';
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40vh;
+	min-height: 200px;
+	background: url(../images/car/mv_bg.jpg) center bottom/cover no-repeat;
+}
+.car01 .mv_bg::after{
+	display: block;
+	content: '';
+	position: absolute;
+	border-top: 70px solid transparent;
+	border-right: 384px solid #333;
+	border-bottom: 0;
+	border-left: 384px solid #333;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car02{
+	background: #333;
+	padding: 2rem 0;
+}
+.car02 table{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.car02 tr{
+	display: block;
+	width: 100%;
+}
+.car02 th,
+.car02 td{
+	border-bottom: solid 1px #ccc;
+	padding: 10px;
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 70px;
+}
+.car02 thead{
+	width: 35%;
+}
+.car02 thead tr{
+	width: 100%;
+}
+.car02 tbody{
+	display: block;
+	width: 65%;
+}
+.car02 td span{
+	display: inline;
+}
+.car02 th{
+	font-size: 0.9rem;
+}
+.car02 th.price{
+	font-size: 1rem;
+}
+.car02 th .small{
+	font-size: 0.7rem;
+}
+.car02 td .large{
+	font-size: 1.4rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car03 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car03{
+	background: #333;
+	padding: 2rem 0;
+}
+.car form{
+	margin-bottom: 3rem;
+}
+.car .form_input{
+	color: #000;
+	background: #fff;
+	width: 100%;
+	padding: 1rem;
+	display: block;
+}
+.car .form_input .date_wrap,
+.car .form_input .email_wrap,
+.car .form_input .name_wrap{
+	padding-top: 0.5rem;
+	border-bottom: solid 1px #000;
+}
+.car .form_input .date_wrap{
+	padding-top: 0;
+}
+.car .form_input .name_wrap{
+	position: relative;
+	width: 100%;
+}
+.car .form_input .name_wrap::after{
+	content: '様';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%) translateY(10px);
+}
+.car .form_input label{
+	display: block;
+	font-size: 0.8rem;
+	width: 100%;
+}
+.car .form_input select,
+.car .form_input input[type="text"],
+.car .form_input input[type="email"]{
+	font-size: 16px;
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 0.25rem;
+	border: none;
+}
+.car .form_input .name_wrap input[type="text"]{
+	width: 90%;
+}
+.car .form_input select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.car .form_wrap .submit{
+	margin-top: 1.25rem;
+	width: 100%;
+}
+.car input[type="submit"]{
+	font-size: 16px;
+	color: #fff;
+	background: var(--red);
+	border: none;
+	width: 100%;
+	height: 100%;
+	padding: 0.75rem;
+	cursor: url("../images/common/cursor.png")24 24, url("../images/common/cursor.cur")24 24,pointer;
+}
+
+.car .contact .line,
+.car .contact .tel{
+	width: 100%;
+}
+.car .contact .line{
+	margin-bottom: 1rem;
+}
+.car .contact a{
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #000;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.car .contact a span{
+	font-weight: normal;
+}
+.car .contact .line a p,
+.car .contact .tel p{
+	position: relative;
+	padding-left: 2.5em;
+}
+.car .contact .line a p::before{
+	position: absolute;
+	content: '';
+	background: url(../images/car/line_bk.png) center center/cover no-repeat;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 29px;
+}
+.car .contact .tel a p::before{
+	position: absolute;
+	content: '';
+	background: url(../images/car/tel_bk.png) center center/cover no-repeat;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 29px;
+	height: 29px;
+}
+.car03 .slider_wrap{
+	margin-top: 3rem;
+}
+.car03 .main_img{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 1rem;
+}
+.car03 .main_img img{
+	width: 100%;
+}
+.car03 .slide_img{
+	width: 100%;
+	position: relative;
+}
+.car03 .swiper-container{
+	width: 100%;
+}
+.car03 .swiper-wrapper{
+	width: 100%;
+}
+.car03 .swiper-slide{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.car03 .swiper-slide .img{
+	width: 23%;
+	margin-bottom: 0.5rem;
+}
+.car03 .swiper-button-prev,
+.car03 .swiper-container-rtl .swiper-button-next{
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")!important;
+	left: -10px!important;
+}
+.car03 .swiper-button-next,
+.car03 .swiper-container-rtl .swiper-button-prev{
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E")!important;
+	right: -10px!important;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car03 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car04 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car04{
+	background: url(../images/car/car04_bg.jpg) center top/cover no-repeat;
+	padding: 3rem 0;
+	color: #000;
+}
+.car04 .box .item{
+	width: 100%;
+}
+.car04 .box .item02{
+	width: 100%;
+	height: 20rem;
+	background: #acacac;
+}
+.car04 .box .item_in{
+	margin-bottom: 3.5rem;
+}
+.car04 .box .item_in:last-of-type{
+	margin-bottom: 2rem;
+}
+.car04 .ttl_wrap{
+	margin-bottom: 1.5rem;
+}
+.car04 table{
+	width: 100%;
+	text-align: left;
+	border-collapse: separate;
+	margin-bottom: 0.5rem;
+}
+.car04 tr{
+	display: flex;
+	flex-wrap: wrap;
+}
+.car04 th,
+.car04 td{
+	padding: 0.5rem;
+	letter-spacing: 1px;
+	margin-bottom: 2px;
+}
+.car04 th{
+	background: #adadad;
+	width: 39.5%;
+	margin-right: 0.5%;
+	font-size: 0.8rem;
+	font-weight: normal;
+}
+.car04 td{
+	background: #fff;
+	width: 60%;
+	font-size: 0.9rem;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.car04 p{
+	font-size: 0.8rem;
+}
+.car04 .function_tb td{
+	width: 100%;
+	color: #575757;
+	background: #a0a0a0;
+}
+.car04 .function_tb td.active{
+	color: #000;
+	background: #ff8383;
+	font-weight: bold;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car05 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car05{
+	padding: 3rem 0;
+	background: #333;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car05 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car06 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car06{
+	background: url(../images/car/car06_bg.jpg) center top/cover no-repeat;
+	padding: 3rem 0;
+}
+.car06 .item{
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	margin-bottom: 3.5rem;
+}
+.car06 .item:last-of-type{
+	margin-bottom: 0;
+}
+.car06 .item .img{
+	width: 100%;
+	margin-bottom: 1.5rem;
+	order: 1;
+}
+.car06 .item .txt{
+	width: 100%;
+	order: 2;
+}
+.car06 .item .ttl_wrap{
+	margin-bottom: 1rem;
+}
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car07 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.car07{
+	padding: 3rem 0;
+	background: #222;
+}
+.car07 .box{
+	margin-bottom: 2rem;
+}
+.car07 .btn{
+	color: #000;
+	background: #fff;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 1rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.car07 .part_box.swiper-container{
+	margin: 2rem 0 0;
+	overflow: visible;
+}
+.car07 .swiper-container .swiper-button-prev{
+	left:-1.5rem;
+	background-image:url(../images/common/prev.png);
+}
+.car07 .swiper-container .swiper-button-next{
+	background-image:url(../images/common/next.png);
+	right:-1.5rem;
+}
+.car07 .swiper-container .swiper-button-prev,
+.car07 .swiper-container .swiper-button-next{
+	background-size: contain;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.car07 .part_box a{
+	position: relative;
+	color: #000;
+}
+.car07 .part_box a .inner{
+	position: absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	padding: 0.5rem;
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}
+.car07 .part_box a .inner h2{
+	font-size: 0.8rem;
+font-weight: normal;
+	display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 1;
+overflow: hidden;
+}
+.car07 .part_box a .inner p.cat{font-size: 0.8rem;}
+.car07 .cat_box{
+	margin:2rem 0 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.car07 .cat_box a{
+	width: 31%;
+	font-size: 0.8rem;
+	margin-right: 3.5%;
+	margin-top: 1rem;
+	text-align: center;
+	background: #fff;
+	padding: 0.5rem 0;
+	color: #000;
+	position: relative;
+}
+.car07 .cat_box a:nth-of-type(3n){
+	margin-right: 0;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ top04 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.company01{
+	background: url(../images/company/mv.jpg) center center/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.company02{
+	padding: 2rem 0 3rem;
+	background: url(../images/company/company_bg.png) center center/100% auto repeat;
+}
+.company02 .item{
+	margin-bottom: 3rem;
+}
+.company02 .item:last-of-type{
+	margin-bottom: 0;
+}
+.company02 .item h2{
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.company02 .item_in{
+	display: flex;
+	flex-direction: column;
+}
+.company02 .item_in h3{
+	order: 1;
+	font-size: 1.1rem;
+	text-align: left;
+	margin-bottom: 1rem;
+}
+.company02 .item_in .img{
+	order: 2;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.company02 .item_in p{
+	order: 3;
+}
+.company02 .item_in p + p{
+	margin-top: 1rem;
+}
+.company02 table{
+	width: 100%;
+}
+.company02 th,
+.company02 td{
+	border-bottom: solid 1px #fff;
+}
+.company02 th{
+	width: 30%;
+	text-align: left;
+	padding: 0.75rem 0.5rem 0.75rem 0;
+
+}
+.company02 td{
+	width: 70%;
+	text-align: left;
+	padding: 0.75rem 0 0.75rem 0.5rem;
+}
+.company02 td iframe{
+	width: 100%;
+	height: 250px;
+	margin: 1rem 0;
+}
+.company02 td a span{
+	margin-left: 0.5rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ staff01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.staff01{
+	background: url(../images/staff/mv.jpg) center center/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ staff01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ staff02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.staff02{
+	padding: 3rem 0;
+	background: url(../images/staff/staff_bg.png) center center/100% auto repeat;
+}
+.staff02 .box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.staff02 .box .item{
+	position: relative;
+	width: 48%;
+	margin-bottom: 1rem;
+}
+.staff02 .box .img{
+	position: relative;
+	height: 180px;
+	overflow: hidden;
+}
+.staff02 .box .img img{
+	transition: .3s;
+}
+.staff02 .box .item::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to bottom, #AA0000 0% , #5D0000 100%);
+	opacity: 0.6;
+}
+.staff02 .box .txt{
+	position: absolute;
+	text-align: center;
+	bottom: 1rem;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+}
+.staff02 .box .item .txt .name{
+	font-size: 1.2rem;
+}
+.staff02 .box .overlay_area{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: scroll;
+	top: 0;
+	left: 0;
+	z-index: 60000;
+	background: rgba(0,0,0,0.9);
+}
+.staff02 .box .overlay_area .img02{
+	height: 280px;
+}
+.staff02 .box .overlay_area .profile{
+	color: #fff;
+	padding: 1.5rem;
+}
+.staff02 .box .overlay_area .profile dl{
+	line-height: 2;
+}
+.staff02 .box .overlay_area .profile dt{
+	font-weight: 700;
+}
+.staff02 .box .overlay_area .profile dd{
+	margin-bottom: 1rem;
+}
+.staff02 .box .overlay_area .close_btn{
+	text-align: center;
+	margin-bottom: 2rem;
+	border: solid 1px #fff;
+	padding: 0.25rem 1rem;
+}
+.staff02 .box .overlay_area .close_btn span{
+	margin-right: 0.75rem;
+}
+.close_btn_sp{
+	position: relative;
+	width:13%;
+	height: 3.5rem;
+	margin-left: auto;
+}
+.close_btn_sp span{
+	position: absolute;
+	top:50%;
+	left:50%;
+	background: #fff;
+	width: 40%;
+	height: 2px;
+	transition: .3s;
+}
+.close_btn_sp span:nth-of-type(1){transform:translate(-50%,-50%) rotate(45deg);}
+.close_btn_sp span:nth-of-type(2){transform:translate(-50%,-50%) rotate(-45deg);}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ staff02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ s_metal01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.s_metal01{
+	background: url(../images/sheet_metal/mv.jpg) center center/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ s_metal01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ s_metal02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.s_metal02{
+	margin:3rem 0 0;
+}
+.s_metal02_in{
+	background: #000;
+	padding: 0 0 3rem;
+	margin: 1rem 0 0;
+}
+.s_metal02_in .img01{
+	z-index: 10; 
+	margin: -2.5rem 0 0;
+}
+.s_metal02_in .txt{
+	background: var(--red);
+	margin: -3rem 0 0;
+	position: relative;
+	z-index: 20;
+	padding:1.5rem;
+}
+.s_metal02_in .txt h3{
+	font-size: 1.2rem;
+	margin:0 0 1.5rem;
+}
+.s_metal02_in .box{
+	margin-top: 1.25rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.s_metal02_in .box .img{
+	width: 48%;
+	margin-top: 3.5vw;
+
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ s_metal02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ 下層共通 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
- 
+
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ 下層共通 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
 @media screen and (orientation:portrait) {/* 縦向き */}

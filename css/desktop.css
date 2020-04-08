@@ -1295,9 +1295,10 @@ opacity: 0;
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ car01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .car01 .mv_bg{
 	position: relative;
-	background: url(../images/car/mv_bg.jpg) center center/cover no-repeat;
+	background: url(../images/car/mv_bg.jpg) center 75%/cover no-repeat;
 	background-attachment: fixed;
 	height: calc(100vh - 8.75rem);
+	min-height: 500px;
 }
 .car01 .mv_bg::after{
 	display: block;
@@ -1310,6 +1311,16 @@ opacity: 0;
 	left: 50%;
 	bottom: 0;
 	transform: translateX(-50%);
+}
+@media screen and (min-width:1280px) and ( max-width:1539px) {
+	.car01 .mv_bg{
+		height: calc(100vh - 8.8rem);
+	}
+}
+@media screen and (min-width:769px) and ( max-width:1279px) {
+	.car01 .mv_bg{
+		height: calc(100vh - 3.5rem);
+	}
 }
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ car01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
 
@@ -1334,7 +1345,7 @@ opacity: 0;
 .car02 th{
 	font-size: 0.8rem;
 }
-.car02 th .large{
+.car02 th.price{
 	font-size: 1.2rem;
 }
 .car02 th .small{
@@ -1391,16 +1402,23 @@ opacity: 0;
 }
 .car .form_input label{
 	font-size: 0.8rem;
-	width: 20%;
+	width: 25%;
+	letter-spacing: 0.1rem;
+}
+.car .form_input label.email{
+	width: 40%;
 }
 .car .form_input select,
 .car .form_input input[type="text"],
 .car .form_input input[type="email"]{
 	font-size: 1.3rem;
-	width: 80%;
+	width: 75%;
 	padding: 0.5rem;
 	margin-bottom: 0.5rem;
 	border: none;
+}
+.car .form_input label.email input[type="text"]{
+	width: 60%;
 }
 .car .form_input select{
 	-webkit-appearance: none;
@@ -1411,29 +1429,9 @@ opacity: 0;
 	width: 65%;
 }
 .car .form_wrap .submit{
-	position: relative;
 	width: 10%;
 }
-.car .form_wrap .submit::before{
-	content: '';
-	border: 0.2rem solid var(--red);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width:100%;
-	height: 100%;
-	z-index: 11;
-	transform: scale(0.6, 0.5);
-	transition: .25s cubic-bezier(0.21, 0.66, 0.26, 1);
-	opacity: 0;
-}
-.car .form_wrap .submit:hover::before{
-	transform: scale(0.9, 0.8);
-	opacity: 1;
-}
 .car input[type="submit"]{
-	position: relative;
-	z-index: 10;
 	font-size: 1.2rem;
 	color: #fff;
 	background: var(--red);
@@ -1441,7 +1439,7 @@ opacity: 0;
 	width: 100%;
 	height: 100%;
 	padding: 1rem;
-	transition: .25s cubic-bezier(0.21, 0.66, 0.26, 1);
+	transition: .3s;
 	cursor: url("../images/common/cursor.png")24 24, url("../images/common/cursor.cur")24 24,pointer;
 }
 .car .submit:hover input[type="submit"]{
@@ -1456,6 +1454,21 @@ opacity: 0;
 .car .contact .line,
 .car .contact .tel{
 	width: 48%;
+}
+.car .contact .tel{
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #000;
+	background: #fff;
+	height: 100%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.car .contact .tel .tel_in{
+	text-align: center;
 }
 .car .contact a{
 	font-size: 1.3rem;
@@ -1474,41 +1487,39 @@ opacity: 0;
 .car .contact a span{
 	font-weight: normal;
 }
-.car .contact a:hover{
+.car .contact .line a:hover{
 	color: #fff;
-	background: var(--red);
+	background: #00b900;
 }
 .car .contact .line a p,
-.car .contact .tel a p{
+.car .contact .tel p{
 	position: relative;
+	padding-left: 2.5em;
 }
 .car .contact .line a p::before{
 	position: absolute;
 	content: '';
 	background: url(../images/car/line_bk.png) center center/cover no-repeat;
 	top: 50%;
-	left: -2.5em;
+	left: 0;
 	transform: translateY(-50%);
 	width: 38px;
-	height: 36.5px;
+	height: 36px;
 	transition: .3s;
 }
 .car .contact .line a:hover p::before{
 	background: url(../images/car/line_w.png) center center/cover no-repeat;
 }
-.car .contact .tel a p::before{
+.car .contact .tel p::before{
 	position: absolute;
 	content: '';
 	background: url(../images/car/tel_bk.png) center center/cover no-repeat;
 	top: 50%;
-	left: -2.5em;
+	left: 0;
 	transform: translateY(-50%);
 	width: 36px;
-	height: 36.5px;
+	height: 36px;
 	transition: .3s;
-}
-.car .contact .tel a:hover p::before{
-	background: url(../images/car/tel_w.png) center center/cover no-repeat;
 }
 .car03 .slider_wrap{
 	margin-top: 6rem;
@@ -1576,6 +1587,7 @@ opacity: 0;
 .car04 .ttl_wrap{
 	margin-bottom: 2.5rem;
 }
+
 .car04 table{
 	width: 100%;
 	text-align: left;
@@ -1591,6 +1603,7 @@ opacity: 0;
 	background: #adadad;
 	width: 20%;
 	font-size: 0.8rem;
+	font-weight: normal;
 }
 .car04 td{
 	background: #fff;
@@ -1743,13 +1756,30 @@ opacity: 0;
 /* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ company02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
 .company02{
 	padding: 4rem 0;
+	background: url(../images/company/company_bg.png) center center/1920px auto repeat;
 }
 .company02 .item{
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
 }
 .company02 .item h2{
-	font-size: 1.7rem;
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+.company02 .item_in .img{
+	float: right;
+	padding: 0 0 1rem 1.5rem;
+}
+.company02 .item_in h3{
+	font-size: 1.4rem;
 	margin-bottom: 1rem;
+}
+.company02 .item_in p + p{
+	margin-top: 1rem;
+}
+.company02 .item_in::after{
+	content: '';
+	clear: both;
+	display: block;
 }
 .company02 table{
 	width: 100%;
@@ -1760,15 +1790,193 @@ opacity: 0;
 	border-bottom: solid 1px #fff;
 }
 .company02 th{
-	width: 20%;
+	width: 25%;
 	text-align: left;
 }
 .company02 td{
-	width: 80%;
+	width: 75%;
 }
 .company02 td iframe{
 	width: 100%;
 	height: 300px;
 	margin: 1rem 0;
 }
+.company02 td a{
+	transition: .3s;
+}
+.company02 td a:hover{
+	opacity: 0.6;
+}
+.company02 td a span{
+	margin-left: 0.5rem;
+}
 /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ company02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ staff01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.staff01{
+	background: url(../images/staff/mv.jpg) center center/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ staff01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ staff02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.staff02{
+	padding: 4rem 0;
+	background: url(../images/staff/staff_bg.png) center center/1920px auto repeat;
+}
+.staff02 .box{
+	display: flex;
+	flex-wrap: wrap;
+}
+.staff02 .box .item{
+	position: relative;
+	width: 31%;
+	margin-right: 3.5%;
+	margin-bottom: 2.5rem;
+}
+.staff02 .box .item:nth-of-type(3n){
+	margin-right: 0;
+}
+.staff02 .box .img{
+	position: relative;
+	height: 250px;
+	overflow: hidden;
+}
+.staff02 .box .img img{
+	transition: .3s;
+}
+.staff02 .box .item::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background: linear-gradient(to bottom, #AA0000 0% , #5D0000 100%);
+	transition: .3s;
+}
+.staff02 .box .item:hover::after{
+	opacity: 0.6;
+}
+.staff02 .box .item:hover .img img{
+	transform: scale(1.05);
+}
+.staff02 .box .txt{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: .3s .2s;
+	z-index: 3;
+}
+.staff02 .box .item:hover .txt{
+	opacity: 1;
+}
+.staff02 .box .item .txt .name{
+	font-size: 1.3rem;
+}
+.staff02 .box .overlay_area{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: scroll;
+	top: 0;
+	left: 0;
+	z-index: 60000;
+	background: rgba(0,0,0,0.9);
+}
+.staff02 .box .overlay_area .close_btn{
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	color: #fff;
+	border: solid 1px #fff;
+	padding: 0.25rem 1rem;
+	transition: .3s;
+}
+.staff02 .box .overlay_area .close_btn span{
+	margin-right: 0.75rem;
+}
+.staff02 .box .overlay_area .close_btn:hover{
+	color: #333;
+	background: #fff;
+}
+.staff02 .box .overlay_area .item_in{
+	display: flex;
+}
+.staff02 .box .overlay_area .img02{
+	width: 35%;
+	height: 100vh;
+	min-height: 800px;
+}
+.staff02 .box .overlay_area .profile{
+	width: 65%;
+	color: #fff;
+	padding: 0 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.staff02 .box .overlay_area .profile dl{
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.1rem;
+	line-height: 2;
+}
+.staff02 .box .overlay_area .profile dt{
+	width: 150px;
+	margin-bottom: 1rem;
+}
+.staff02 .box .overlay_area .profile dd{
+	width: calc(100% - 150px);
+	padding-left: 1rem;
+	margin-bottom: 1rem;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ staff02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ s_metal01 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.s_metal01{
+	background: url(../images/sheet_metal/mv.jpg) center 40%/cover no-repeat;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ s_metal01 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
+
+/* ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ s_metal02 ▼▼▼▼▼▼▼▼▼▼▼▼▼▼ */
+.s_metal02{
+	margin:3rem 0 0;
+}
+.s_metal02_in{
+	background: #000;
+	padding: 0 0 4rem;
+	margin: 1rem 0 0;
+}
+.s_metal02_in .img01{
+	width: 45%;
+	z-index: 10; 
+	transform: translateY(-3rem);
+}
+.s_metal02_in .txt{
+	width:65%;
+	background: var(--red);
+	margin: -25% 0 0 auto;
+	padding:4rem 4rem 4rem 14%;
+}
+.s_metal02_in .txt h3{
+	font-size: 1.5rem;
+	margin:0 0 2rem;
+}
+.s_metal02_in .box{
+	margin-top: 3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.s_metal02_in .box .img{
+	width: 23%;
+}
+/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ s_metal02 ▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
